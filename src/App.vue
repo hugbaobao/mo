@@ -4,10 +4,23 @@
 <header>
   <div class="w">
     <div class="head" @click="tohome">
-    <a href="">
+    <div class="mylogo">
+      <a href="">
       <img src="./assets/user.png" alt="星期六财务">
     </a>
     <h2>星期六财务</h2>
+    </div>
+    <!-- 联系我 -->
+    <div class="contact animate__animated animate__pulse">
+      <el-popover
+    placement="bottom"
+    title=""
+    width="200"
+    trigger="click">
+    <img src="./assets/vchat.png" alt="" style="width:175px">
+    <el-button slot="reference">立即联系</el-button>
+  </el-popover>
+    </div>
   </div>
   </div>
 </header>
@@ -94,7 +107,7 @@
 </table>
 <div class="vchat">
   <h3>星期六财务官方微信</h3>
-  <img src="./assets/user.png" alt="">
+  <img src="./assets/vchat.png" alt="">
 </div>
 </div>
   </div>
@@ -147,10 +160,22 @@ header a img{
   height: 80px;
   display: flex;
   align-items: center;
-  padding-left: 60px;
+  justify-content: space-between;
+  padding:0 60px;
 }
 .head h2 {
   font-weight: 400;
+  margin-left: 10px;
+}
+.mylogo {
+  display: flex;
+  align-items: center;
+}
+.mylogo a {
+  font-size: 0;
+}
+.contact {
+margin-right: 0;
 }
 .w {
   width: 1200px;
@@ -208,7 +233,8 @@ table {
   margin-right: 30px;
 }
 .vchat img {
-width: 100px;
-height: 100px;
+width: 150px;
+height: 150px;
+margin-top: 10px;
 }
 </style>
