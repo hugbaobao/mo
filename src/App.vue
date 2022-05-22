@@ -6,7 +6,7 @@
     <div class="head" @click="tohome">
     <div class="mylogo">
       <a href="">
-      <img src="./assets/user.png" alt="星期六财务">
+      <img src="./assets/logom.png" alt="星期六财务">
     </a>
     <h2>星期六财务</h2>
     </div>
@@ -27,7 +27,7 @@
 <!-- nav -->
 <nav>
   <div class="w">
-    <el-menu :default-active="activeIndex" active-text-color="#FF8A22" class="el-menu-demo" mode="horizontal" @select="handleSelect" router>
+    <el-menu :default-active="activeIndex" active-text-color="#FF8A22" class="el-menu-demo" mode="horizontal" router>
   <el-menu-item index="/home">首页</el-menu-item>
   <el-submenu index="/first" :show-timeout="200">
     <template slot="title">工商登记</template>
@@ -123,9 +123,6 @@ export default {
     }
   },
   methods: {
-    handleSelect (key, keyPath) {
-      console.log(key, keyPath)
-    },
     tohome () {
       this.$router.push('/home')
     }
@@ -153,7 +150,6 @@ header{
   box-shadow: 0px 1px 0px 0px rgba(0, 3, 8, 0.05);
 }
 header a img{
-  width: 40px;
   height: 40px;
 }
 .head {

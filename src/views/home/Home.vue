@@ -88,6 +88,26 @@
   <div class="w">
     <h1 class="lasttitle">杭州首家实行T+0管理模式工商代理机构，高效——源于不断的模式创新</h1>
   </div>
+  <!-- 介绍 -->
+  <div class="select">
+<div class="w">
+  <div class="fl">
+<h1>
+    WHY CHOOSE US ?
+    <h2>为什么选择我们？</h2>
+  </h1>
+  <p>
+    杭州星期六财务管理有限公司是国内领先的企业一站式服务提供商。<br>
+    我们的使命让企业经营成本更低，创业更容易！旗下拥有三大事业部：财税事业部，知识产权事业部，技术共享事业部。<br>
+    目前在全国拥有30家全资子公司：深圳、苏州、杭州、南京、武汉、上海，郑州，天津，宁波，温州，广州，长沙等，目前分公司还在持续拓展中
+
+  </p>
+  </div>
+<div class="fr">
+<img src="../../assets/upload/pep.png" alt="">
+</div>
+</div>
+  </div>
   </div>
 </template>
 
@@ -105,11 +125,11 @@ export default {
   mounted () {
     // 首次加载时,初始化高度
     this.screenWidth = window.innerWidth
-    this.bannerHeight = 400 / 1550 * this.screenWidth
+    this.bannerHeight = 500 / 1550 * this.screenWidth
     // 窗口大小发生改变
     window.onresize = () => {
       this.screenWidth = window.innerWidth
-      this.bannerHeight = 400 / 1550 * this.screenWidth
+      this.bannerHeight = 500 / 1550 * this.screenWidth
     }
   },
   components: {
@@ -176,5 +196,38 @@ margin: 40px 0;
   }
   .lasttitle {
     margin: 40px auto;
+  }
+  .select {
+    background-color: #fff;
+  }
+  .select .w {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  .select h1 {
+    position: relative;
+    display: inline-block;
+    color: rgba(33, 33, 33, 0.08);
+    font-size: 60px;
+    margin-bottom: 100px;
+  }
+  .select h1 h2 {
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    font-size: 60px;
+    color: #2c3e50;
+  }
+  .select p {
+    text-align: left;
+    line-height: 30px;
+    padding: 0 30px;
+  }
+  .select img {
+    width: 400px;
+  }
+  .fl {
+    width: 700px;
   }
 </style>
