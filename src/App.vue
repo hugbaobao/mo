@@ -112,10 +112,16 @@
 </div>
   </div>
 </div>
+
+<!-- 留言板 -->
+<div class="dialog animate__animated animate__swing">
+<Board></Board>
+</div>
   </div>
 </template>
 
 <script>
+import Board from '@/components/message_board/board.vue'
 export default {
   data () {
     return {
@@ -126,6 +132,9 @@ export default {
     tohome () {
       this.$router.push('/home')
     }
+  },
+  components: {
+    Board
   }
 }
 </script>
@@ -232,5 +241,12 @@ table {
 width: 150px;
 height: 150px;
 margin-top: 10px;
+}
+/* 留言板 */
+.dialog{
+  position: fixed;
+  right: 20px;
+  bottom: 120px;
+  z-index: 999;
 }
 </style>
