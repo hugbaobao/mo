@@ -1,13 +1,6 @@
 <template>
   <div>
- <el-popover
-    placement="bottom"
-    title=""
-    width="400"
-    trigger="click"
-    content="">
-    <el-button slot="reference">点此给我们留言</el-button>
-    <div class="message" v-popover>
+  <div class="message" v-popover>
 <el-form ref="form" :model="form" :label-position="labelPosition" label-width="80px">
   <el-form-item label="您的需求">
     <el-input type="textarea" v-model="form.desc" name="message"></el-input>
@@ -20,7 +13,6 @@
   </el-form-item>
 </el-form>
     </div>
-  </el-popover>
 </div>
 </template>
 

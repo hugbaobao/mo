@@ -2,7 +2,7 @@
   <div id="Home">
 <!-- 轮播图 -->
 <div>
-    <el-carousel :height="bannerHeight+'px'">
+    <el-carousel height="600px">
       <el-carousel-item>
         <img src="../../assets/upload/banner2.jpg" alt="">
       </el-carousel-item>
@@ -118,20 +118,10 @@ export default {
   name: 'myHome',
   data () {
     return {
-      bannerHeight: 0,
-      screenwidth: 0
+
     }
   },
-  mounted () {
-    // 首次加载时,初始化高度
-    this.screenWidth = window.innerWidth
-    this.bannerHeight = 500 / 1550 * this.screenWidth
-    // 窗口大小发生改变
-    window.onresize = () => {
-      this.screenWidth = window.innerWidth
-      this.bannerHeight = 500 / 1550 * this.screenWidth
-    }
-  },
+
   components: {
     Fouricon, Title
   }
@@ -215,7 +205,7 @@ margin: 40px 0;
   .select h1 h2 {
     position: absolute;
     top: 35px;
-    left: -30px;
+    left: 30px;
     font-size: 60px;
     color: #2c3e50;
   }
